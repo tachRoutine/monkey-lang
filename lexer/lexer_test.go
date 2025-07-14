@@ -1,11 +1,13 @@
 package lexer
+
 import (
-       "testing"
-       "monkey/token"
+	"testing"
+
+	"github.com/tachRoutine/monkey-lang/token"
 )
 
 func TestNextToken(t *testing.T) {
-       input := `=+(){},;`
+    input := `=+(){},;`
 	tests := []struct {
 	expectedType token.TokenType 
 	expectedLiteral string
